@@ -1,0 +1,166 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header .logo-section {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo-section .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .logo-section .site-name {
+    font-size: 24px;
+    font-family: Consolas, monospace;
+    color: #f8f6f6;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgb(236, 253, 2);
+}
+
+/* Form Box Styling */
+.form-box {
+    width: 350px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.form-box h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.form-box .avatar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.form-box .avatar img {
+    width: 10%;
+    height: 10%;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    background: #03a9f4;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #0288d1;
+}
+
+/* Styling for text and links below the form */
+.form-box a {
+    text-decoration: none;
+    color: #03a9f4;
+    font-size: 16px;
+    margin: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.form-box a:hover {
+    color: #0288d1;
+}
+
+/* Styling for the paragraph and spacing */
+.form-box p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Add some spacing between the question and the Sign Up link */
+.form-box p a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #03a9f4;
+}
+
+.form-box p a:hover {
+    color: #0288d1;
+}
+
+/* Overall alignment and spacing */
+.form-box .links-section {
+    margin-top: 20px;
+    text-align: center;
+}

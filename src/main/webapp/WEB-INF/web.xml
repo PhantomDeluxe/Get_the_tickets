@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.example.get_the_tickets.GetIn.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/helloservlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CancelTicket</servlet-name>
+        <servlet-class>com.example.get_the_tickets.Front.CancelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelTicket</servlet-name>
+        <url-pattern>/cancel</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>com.example.get_the_tickets.GetIn.SignUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MainPage</servlet-name>
+        <servlet-class>com.example.get_the_tickets.Front.MainPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/mainpage</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Message</servlet-name>
+        <servlet-class>com.example.get_the_tickets.Front.Message</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Message</servlet-name>
+        <url-pattern>/cancelGet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>HtmlMain</servlet-name>
+        <servlet-class>com.example.get_the_tickets.Front.MainPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HtmlMain</servlet-name>
+        <url-pattern>/hiservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Vihan</servlet-name>
+        <servlet-class>com.example.get_the_tickets.RailXplor.PreVihaan</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Vihan</servlet-name>
+        <url-pattern>/previhaan</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>pnr</servlet-name>
+        <servlet-class>com.example.get_the_tickets.RailXplor.Vihaan</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pnr</servlet-name>
+        <url-pattern>/pnrstatus</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>trainstation</servlet-name>
+        <servlet-class>com.example.get_the_tickets.RailXplor.TrainBetweenStation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>trainstation</servlet-name>
+        <url-pattern>/trainsta</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>dailytrain</servlet-name>
+        <servlet-class>com.example.get_the_tickets.RailXplor.DailyUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dailytrain</servlet-name>
+        <url-pattern>/dailyCheck</url-pattern>
+    </servlet-mapping>
+
+</web-app>
