@@ -1,21 +1,15 @@
 
 package com.example.get_the_tickets.RailXplor;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Calendar;
-
-import static java.lang.System.currentTimeMillis;
-import static java.lang.System.out;
 
 public class DailyUpdate extends HttpServlet {
 
@@ -29,7 +23,7 @@ public class DailyUpdate extends HttpServlet {
         Long bookingDate = (Long) req.getAttribute("BD");
         HttpURLConnection connect = getHttpURLConnection(fromCode, toCode);
 
-        Long compare_date_millis = 1735991943699L;
+        long compare_date_millis = 1735991943699L;
         System.out.println(compare_date_millis);
 
         while (compare_date_millis < DateOfJourney) {
@@ -69,7 +63,7 @@ public class DailyUpdate extends HttpServlet {
         Long bookingDate = (Long) req.getAttribute("BD");
         HttpURLConnection connect = getHttpURLConnection(fromCode, toCode);
 
-        Long compare_date_millis = 1735991943699L;
+        long compare_date_millis = 1735991943699L;
         System.out.println(compare_date_millis);
 
         while (compare_date_millis < DateOfJourney) {
